@@ -3,6 +3,10 @@ import os
 import logging
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
+from flask import Flask, request, jsonify
+from flask.logging import create_logger
+#install the "pip install flask-cor" module/library
+from flask_cors import CORS, cross_origin #needed to install this over COR header issues
 
 app = Flask(__name__)
 LOG = create_logger(app)
